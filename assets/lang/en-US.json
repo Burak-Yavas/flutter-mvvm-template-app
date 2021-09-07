@@ -1,0 +1,26 @@
+{
+    "welcome": "Welcome To My App",
+    "onBoard": {
+        "page1": {
+            "title": "Any Meal You Want",
+            "desc": "More than 10 cuisine available"
+        },
+        "page2": {
+            "title": "Need A Break?",
+            "desc": "Order any drink you want"
+        },
+        "page3": {
+            "title": "Just A Few Steps",
+            "desc": "And your order on your way"
+        }
+    },
+    "login": {
+        "tab1": "Login",
+        "tab2": "SignUp",
+        "email": "Email",
+        "password": "Password",
+        "forgotText": "Forgot Password",
+        "login": "Login",
+        "dontAccount": "Dont have account"
+    }
+}
