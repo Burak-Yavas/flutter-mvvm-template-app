@@ -12,5 +12,22 @@ abstract class  LocaleKeys {
   static const onBoard_page3_desc = 'onBoard.page3.desc';
   static const onBoard_page3 = 'onBoard.page3';
   static const onBoard = 'onBoard';
+  static const login_tab1 = 'login.tab1';
+  static const login_tab2 = 'login.tab2';
+  static const login_email = 'login.email';
+  static const login_password = 'login.password';
+  static const login_forgotText = 'login.forgotText';
+  static const login_login = 'login.login';
+  static const login_dontAccount = 'login.dontAccount';
+  static const login = 'login';
+  static const home_feed_tabBar_tab1 = 'home.feed.tabBar.tab1';
+  static const home_feed_tabBar_tab2 = 'home.feed.tabBar.tab2';
+  static const home_feed_tabBar_tab3 = 'home.feed.tabBar.tab3';
+  static const home_feed_tabBar_tab4 = 'home.feed.tabBar.tab4';
+  static const home_feed_tabBar = 'home.feed.tabBar';
+  static const home_feed_subtitle_recommended = 'home.feed.subtitle.recommended';
+  static const home_feed_subtitle = 'home.feed.subtitle';
+  static const home_feed = 'home.feed';
+  static const home = 'home';
 
 }

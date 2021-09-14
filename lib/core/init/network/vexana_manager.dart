@@ -15,6 +15,8 @@ class VexanaManager {
 
   VexanaManager._init();
 
-  INetworkManager networkManager =
-      NetworkManager(isEnableLogger: true, options: BaseOptions(baseUrl: Platform.isAndroid ? _androidBaseUrl : _iosBaseUrl));
+  INetworkManager networkManager = NetworkManager(
+      isEnableLogger: true,
+      options: BaseOptions(
+          baseUrl: Platform.isAndroid ? _androidBaseUrl : _iosBaseUrl));
 }
