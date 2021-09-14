@@ -22,5 +22,18 @@
         "forgotText": "Forgot Password",
         "login": "Login",
         "dontAccount": "Dont have account"
+    },
+    "home": {
+        "feed": {
+            "tabBar": {
+                "tab1": "Latest",
+                "tab2": "Decorative",
+                "tab3": "Music",
+                "tab4": "Style"
+            },
+            "subtitle": {
+                "recommended": "Recommended"
+            }
+        }
     }
 }
