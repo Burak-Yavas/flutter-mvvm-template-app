@@ -34,6 +34,12 @@
             "subtitle": {
                 "recommended": "Recommended"
             }
+        },
+        "restaurants": {
+            "cancel": "Cancel",
+            "next": "Next",
+            "search": "Search",
+            "findRestautants": "Find Restaurants"
         }
     }
 }
