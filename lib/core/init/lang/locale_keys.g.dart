@@ -28,6 +28,11 @@ abstract class  LocaleKeys {
   static const home_feed_subtitle_recommended = 'home.feed.subtitle.recommended';
   static const home_feed_subtitle = 'home.feed.subtitle';
   static const home_feed = 'home.feed';
+  static const home_restaurants_cancel = 'home.restaurants.cancel';
+  static const home_restaurants_next = 'home.restaurants.next';
+  static const home_restaurants_search = 'home.restaurants.search';
+  static const home_restaurants_findRestautants = 'home.restaurants.findRestautants';
+  static const home_restaurants = 'home.restaurants';
   static const home = 'home';
 
 }
