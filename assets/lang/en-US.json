@@ -40,6 +40,12 @@
             "next": "Next",
             "search": "Search",
             "findRestautants": "Find Restaurants"
+        },
+        "dashboard": {
+            "title": "Delivery App",
+            "recommendedRestaurants": "Recommended Restaurants",
+            "allRestaurants": "All Restaurants",
+            "search": "Search Restaurant"
         }
     }
 }

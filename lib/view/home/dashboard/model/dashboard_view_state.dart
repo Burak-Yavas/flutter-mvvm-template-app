@@ -1,0 +1,8 @@
+enum DashBoardViewItems {
+  SEARCH_BAR,
+  TAB_BAR,
+  SLIDER,
+  RECOMM_RESTAURANTS,
+  ALL_RESTAURANTS
+}
+//CAN_ADD_ADMOB

@@ -33,6 +33,11 @@ abstract class  LocaleKeys {
   static const home_restaurants_search = 'home.restaurants.search';
   static const home_restaurants_findRestautants = 'home.restaurants.findRestautants';
   static const home_restaurants = 'home.restaurants';
+  static const home_dashboard_title = 'home.dashboard.title';
+  static const home_dashboard_recommendedRestaurants = 'home.dashboard.recommendedRestaurants';
+  static const home_dashboard_allRestaurants = 'home.dashboard.allRestaurants';
+  static const home_dashboard_search = 'home.dashboard.search';
+  static const home_dashboard = 'home.dashboard';
   static const home = 'home';
 
 }
