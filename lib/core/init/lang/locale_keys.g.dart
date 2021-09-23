@@ -39,5 +39,8 @@ abstract class  LocaleKeys {
   static const home_dashboard_search = 'home.dashboard.search';
   static const home_dashboard = 'home.dashboard';
   static const home = 'home';
+  static const settings_settings_title = 'settings.settings.title';
+  static const settings_settings = 'settings.settings';
+  static const settings = 'settings';
 
 }
