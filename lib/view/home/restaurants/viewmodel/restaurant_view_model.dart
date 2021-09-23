@@ -30,7 +30,7 @@ abstract class _RestaurantViewModelBase with Store, BaseViewModel {
   _RestaurantViewModelBase(this._socialService);
 
   @override
-  void setContext(BuildContext? context) => this.context = context;
+  void setContext(BuildContext context) => this.context = context;
   @override
   void init() {
     _throttleStringHelper = ThrottleStringHelper();

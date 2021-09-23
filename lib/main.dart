@@ -1,9 +1,6 @@
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
-import 'package:mvvm_app/view/auth/login/view/login_view.dart';
-import 'package:mvvm_app/view/home/dashboard/view/dashboard_view.dart';
-import 'package:mvvm_app/view/home/feed/view/feed_view.dart';
-import 'package:mvvm_app/view/home/restaurants/view/restaurants_view.dart';
+import 'package:mvvm_app/core/init/cache/locale_manager.dart';
 import 'package:provider/provider.dart';
 
 import 'core/constants/app/app_constants.dart';
@@ -12,6 +9,7 @@ import 'core/init/navigation/navigation_route.dart';
 import 'core/init/navigation/navigation_service.dart';
 import 'core/init/notifier/provider_list.dart';
 import 'core/init/notifier/theme_notifer.dart';
+import 'view/settings/view/settings_view.dart';
 
 Future<void> main() async {
   await _init();
@@ -28,6 +26,7 @@ Future<void> main() async {
 
 Future<void> _init() async {
   WidgetsFlutterBinding.ensureInitialized();
+  await LocaleManager.prefrencesInit();
   await EasyLocalization.ensureInitialized();
 }
 
@@ -39,7 +38,7 @@ class MyApp extends StatelessWidget {
       theme: context.watch<ThemeNotifier>().currentTheme,
       localizationsDelegates: context.localizationDelegates,
       supportedLocales: context.supportedLocales,
-      home: DashBoardView(),
+      home: SettingsView(),
       locale: context.locale,
       onGenerateRoute: NavigationRoute.instance.generateRoute,
       navigatorKey: NavigationService.instance.navigatorKey,

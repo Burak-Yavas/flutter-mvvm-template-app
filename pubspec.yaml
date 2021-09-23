@@ -41,6 +41,9 @@ dependencies:
   vexana: ^2.3.0
   flutter_svg: ^0.22.0
   animations: ^2.0.1
+  webview_flutter: ^2.0.14
+  lottie: ^1.2.0
+
 dev_dependencies:
   flutter_test:
     sdk: flutter
