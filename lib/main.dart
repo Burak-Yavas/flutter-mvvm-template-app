@@ -1,6 +1,7 @@
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:mvvm_app/core/init/cache/locale_manager.dart';
+import 'package:mvvm_app/view/home/detail/view/detail_view.dart';
 import 'package:provider/provider.dart';
 
 import 'core/constants/app/app_constants.dart';
@@ -38,7 +39,7 @@ class MyApp extends StatelessWidget {
       theme: context.watch<ThemeNotifier>().currentTheme,
       localizationsDelegates: context.localizationDelegates,
       supportedLocales: context.supportedLocales,
-      home: SettingsView(),
+      home: DetailView(),
       locale: context.locale,
       onGenerateRoute: NavigationRoute.instance.generateRoute,
       navigatorKey: NavigationService.instance.navigatorKey,
