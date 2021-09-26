@@ -12,7 +12,7 @@ class VexanaManager {
 
   static const String _iosBaseUrl = 'http://localhost:3000/';
   static const String _androidBaseUrl = 'http://10.0.2.2:3000/';
- 
+  static const String _realDevice = "http://192.168.1.104:3000/";
 
   VexanaManager._init();
 
