@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
-import 'package:mvvm_app/product/exception/navigate_model_not_found.dart';
-import 'package:mvvm_app/view/auth/onboard/view/on_board_view.dart';
-import 'package:mvvm_app/view/settings/model/settings_dynamic_model.dart';
-import 'package:mvvm_app/view/settings/view/subview/settings_dynamic_view.dart';
+import 'package:mvvm_app/view/auth/login/view/login_view.dart';
+import '../../../product/exception/navigate_model_not_found.dart';
+import '../../../view/auth/onboard/view/on_board_view.dart';
+import '../../../view/auth/splash/view/splash_view.dart';
+import '../../../view/settings/model/settings_dynamic_model.dart';
+import '../../../view/settings/view/subview/settings_dynamic_view.dart';
 import '../../components/card/not_found_navigation_widget.dart';
 import '../../constants/navigation/navigation_constants.dart';
 
@@ -16,7 +18,9 @@ class NavigationRoute {
   Route<dynamic> generateRoute(RouteSettings args) {
     switch (args.name) {
       case NavigationConstants.DEFAULT:
-
+        return normalNavigate(SplashView());
+      case NavigationConstants.LOGIN:
+        return normalNavigate(LoginView());
       case NavigationConstants.ON_BOARD:
         return normalNavigate(OnBoardView());
 

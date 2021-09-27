@@ -3,4 +3,7 @@ class NavigationConstants {
   static const DEFAULT = '/';
   static const SETTINGS_WEB_VIEW = '/settingsWebView';
   static const ON_BOARD = '/onBoard';
+  static const LOGIN = '/login';
+  static const DASHBOARD = '/dashboard';
+  static const RESTAURANT = '/restaurant';
 }
