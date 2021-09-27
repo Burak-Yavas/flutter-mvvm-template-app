@@ -1,3 +1,4 @@
+import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:mobx/mobx.dart';
 import 'package:mvvm_app/core/constants/enums/locale_keys_enum.dart';
@@ -29,11 +30,11 @@ abstract class _OnBoardViewModelBase with Store, BaseViewModel {
   }
 
   void init() {
-    onBoardItems.add(OnBoardModel(LocaleKeys.onBoard_page1_title,
+    onBoardItems.add(OnBoardModel(LocaleKeys.onBoard_page1_title.tr(),
         LocaleKeys.onBoard_page1_desc.locale, ImagePathSvg.instance!.svg1));
-    onBoardItems.add(OnBoardModel(LocaleKeys.onBoard_page2_title,
+    onBoardItems.add(OnBoardModel(LocaleKeys.onBoard_page2_title.tr(),
         LocaleKeys.onBoard_page2_desc.locale, ImagePathSvg.instance!.svg2));
-    onBoardItems.add(OnBoardModel(LocaleKeys.onBoard_page3_title,
+    onBoardItems.add(OnBoardModel(LocaleKeys.onBoard_page3_title.tr(),
         LocaleKeys.onBoard_page3_desc.locale, ImagePathSvg.instance!.svg3));
   }
 
@@ -46,10 +47,10 @@ abstract class _OnBoardViewModelBase with Store, BaseViewModel {
     changeLoading();
     await localeManager.setBoolValue(PreferencesKeys.IS_FIRST_APP, true);
     changeLoading();
-    /*if (navigation.navigatorKey.currentState!.canPop()) {
+    if (navigation.navigatorKey.currentState!.canPop()) {
       navigation.navigatorKey.currentState!.pop();
     } else {
-      await navigation.navigateToPageClear(path: NavigationConstants.TEST_VIEW);
-    }*/
+      await navigation.navigateToPageClear(path: NavigationConstants.LOGIN);
+    }
   }
 }
