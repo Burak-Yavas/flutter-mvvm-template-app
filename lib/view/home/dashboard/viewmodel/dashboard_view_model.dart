@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:mobx/mobx.dart';
-import 'package:mvvm_app/core/base/model/base_view_model.dart';
-import 'package:mvvm_app/view/home/dashboard/model/dashboard_enums.dart';
-import 'package:mvvm_app/view/home/dashboard/model/dashboard_model.dart';
-import 'package:mvvm_app/view/home/dashboard/model/slider_model.dart';
-import 'package:mvvm_app/view/home/dashboard/service/dashboard_service.dart';
+
+import '../../../../core/base/model/base_view_model.dart';
+import '../model/dashboard_enums.dart';
+import '../model/dashboard_model.dart';
+import '../model/slider_model.dart';
+import '../service/dashboard_service.dart';
+
 part 'dashboard_view_model.g.dart';
 
 class DashBoardViewModel = _DashBoardViewModelBase with _$DashBoardViewModel;

@@ -1,6 +1,7 @@
-import 'package:mvvm_app/view/_product/_utility/detail_utility_enums.dart';
-import 'package:mvvm_app/view/home/detail/model/detail_model.dart';
 import 'package:vexana/vexana.dart';
+
+import '../../../_product/_utility/detail_utility_enums.dart';
+import '../model/detail_model.dart';
 
 abstract class IDetailService {
   final INetworkManager manager;

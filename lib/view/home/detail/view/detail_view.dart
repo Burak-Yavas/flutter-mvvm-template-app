@@ -1,13 +1,16 @@
+import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_mobx/flutter_mobx.dart';
-import 'package:mvvm_app/core/base/view/base_widget.dart';
-import 'package:mvvm_app/core/components/slider/range_price_slider.dart';
-import 'package:mvvm_app/core/extension/context_extension.dart';
-import 'package:mvvm_app/core/init/network/vexana_manager.dart';
-import 'package:mvvm_app/view/_product/_utility/detail_utility_enums.dart';
-import 'package:mvvm_app/view/_product/_widgets/card/detail_card.dart';
-import 'package:mvvm_app/view/home/detail/service/detail_service.dart';
-import 'package:mvvm_app/view/home/detail/viewmodel/detail_view_model.dart';
+
+import '../../../../core/base/view/base_widget.dart';
+import '../../../../core/components/slider/range_price_slider.dart';
+import '../../../../core/extension/context_extension.dart';
+import '../../../../core/init/lang/locale_keys.g.dart';
+import '../../../../core/init/network/vexana_manager.dart';
+import '../../../_product/_utility/detail_utility_enums.dart';
+import '../../../_product/_widgets/card/detail_card.dart';
+import '../service/detail_service.dart';
+import '../viewmodel/detail_view_model.dart';
 
 enum _DetailEnum { TITLE, TOP_SELLERS, NORMAL_TITLE, NORMAL_SORT }
 
@@ -37,12 +40,13 @@ class DetailView extends StatelessWidget {
                             switch (_views) {
                               case _DetailEnum.TITLE:
                                 return buildTitleText(
-                                    context, "En Çok Satanlar");
+                                    context, LocaleKeys.home_detail_title.tr());
                               case _DetailEnum.TOP_SELLERS:
                                 return buildSizedBoxDetailCard(
                                     context, viewModel);
                               case _DetailEnum.NORMAL_TITLE:
-                                return buildTitleText(context, "Menuler");
+                                return buildTitleText(context,
+                                    LocaleKeys.home_detail_title2.tr());
                               case _DetailEnum.NORMAL_SORT:
                                 viewModel.fetchNormalItems();
                                 return buildSizedBoxDetailCardNormal(
@@ -73,7 +77,7 @@ class DetailView extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Text('Filter'),
+            Text(LocaleKeys.home_detail_filter.tr()),
             Divider(height: 2, thickness: 2),
             Row(
               children: [

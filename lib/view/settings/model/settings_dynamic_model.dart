@@ -7,7 +7,7 @@ class SettingsDynamicModel {
   factory SettingsDynamicModel.fakeArchitecturePR() {
     return SettingsDynamicModel('Project Contributors',
         url:
-            'https://github.com/VB10/flutter-architecture-template/pulls?q=is%3Apr+is%3Aopen+sort%3Aupdated-desc');
+            'https://github.com/Burak-Yavas/flutter-mvvm-template-app/pulls?q=is%3Apr+is%3Aclosed');
   }
 
   factory SettingsDynamicModel.fakeNull() {

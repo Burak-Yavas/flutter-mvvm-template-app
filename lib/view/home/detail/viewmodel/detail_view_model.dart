@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:mobx/mobx.dart';
-import 'package:mvvm_app/core/base/model/base_view_model.dart';
-import 'package:mvvm_app/core/extension/context_extension.dart';
-import 'package:mvvm_app/view/_product/_utility/detail_utility_enums.dart';
-import 'package:mvvm_app/view/home/detail/model/detail_model.dart';
-import 'package:mvvm_app/view/home/detail/service/detail_service.dart';
+
+import '../../../../core/base/model/base_view_model.dart';
+import '../../../_product/_utility/detail_utility_enums.dart';
+import '../model/detail_model.dart';
+import '../service/detail_service.dart';
+
 part 'detail_view_model.g.dart';
 
 class DetailViewModel = _DetailViewModelBase with _$DetailViewModel;

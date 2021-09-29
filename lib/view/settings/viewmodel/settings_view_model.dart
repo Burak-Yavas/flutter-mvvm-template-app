@@ -1,13 +1,14 @@
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:mobx/mobx.dart';
-import 'package:mvvm_app/core/base/model/base_view_model.dart';
-import 'package:mvvm_app/core/constants/navigation/navigation_constants.dart';
-import 'package:mvvm_app/core/init/lang/language_manager.dart';
-import 'package:mvvm_app/core/init/notifier/theme_notifer.dart';
-import 'package:mvvm_app/product/model/user.dart';
-import 'package:mvvm_app/view/settings/model/settings_dynamic_model.dart';
 import 'package:provider/provider.dart';
+
+import '../../../core/base/model/base_view_model.dart';
+import '../../../core/constants/navigation/navigation_constants.dart';
+import '../../../core/init/notifier/theme_notifer.dart';
+import '../../../product/model/user.dart';
+import '../model/settings_dynamic_model.dart';
+
 part 'settings_view_model.g.dart';
 part 'subviewmodel/about_view_model.dart';
 

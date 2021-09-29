@@ -1,11 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:mobx/mobx.dart';
-import 'package:mvvm_app/core/constants/enums/locale_keys_enum.dart';
-import 'package:mvvm_app/core/constants/navigation/navigation_constants.dart';
-import 'package:mvvm_app/core/extension/context_extension.dart';
-import 'package:mvvm_app/view/auth/splash/service/splash_service.dart';
 
 import '../../../../core/base/model/base_view_model.dart';
+import '../../../../core/constants/enums/locale_keys_enum.dart';
+import '../../../../core/constants/navigation/navigation_constants.dart';
+import '../../../../core/extension/context_extension.dart';
 
 part 'splash_view_model.g.dart';
 

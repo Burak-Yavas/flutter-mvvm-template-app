@@ -1,11 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:mobx/mobx.dart';
-import 'package:mvvm_app/core/base/model/base_view_model.dart';
-import 'package:mvvm_app/core/constants/enums/locale_keys_enum.dart';
-import 'package:mvvm_app/core/init/network/vexana_manager.dart';
-import 'package:mvvm_app/view/auth/login/model/login_model.dart';
-import 'package:mvvm_app/view/auth/login/service/ILogin_service.dart';
-import 'package:mvvm_app/view/auth/login/service/login_service.dart';
+
+import '../../../../core/base/model/base_view_model.dart';
+import '../../../../core/constants/enums/locale_keys_enum.dart';
+import '../../../../core/init/network/vexana_manager.dart';
+import '../model/login_model.dart';
+import '../service/ILogin_service.dart';
+import '../service/login_service.dart';
+
 part 'login_view_model.g.dart';
 
 class LoginViewModel = _LoginViewModelBase with _$LoginViewModel;

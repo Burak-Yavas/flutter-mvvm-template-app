@@ -1,11 +1,12 @@
+import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_mobx/flutter_mobx.dart';
-import 'package:mvvm_app/core/base/view/base_widget.dart';
-import 'package:mvvm_app/core/constants/image/image_constatns.dart';
-import 'package:mvvm_app/core/extension/context_extension.dart';
-import 'package:mvvm_app/core/init/network/vexana_manager.dart';
-import 'package:mvvm_app/view/auth/splash/service/splash_service.dart';
-import 'package:mvvm_app/view/auth/splash/viewmodel/splash_view_model.dart';
+
+import '../../../../core/base/view/base_widget.dart';
+import '../../../../core/constants/image/image_constatns.dart';
+import '../../../../core/extension/context_extension.dart';
+import '../../../../core/init/lang/locale_keys.g.dart';
+import '../viewmodel/splash_view_model.dart';
 
 class SplashView extends StatelessWidget {
   const SplashView({Key? key}) : super(key: key);
@@ -46,7 +47,7 @@ class SplashView extends StatelessWidget {
             child: Column(
               mainAxisSize: MainAxisSize.min,
               children: [
-                Text("WELCOME TO MEAL DELIVERY APP",
+                Text(LocaleKeys.splash_splash_title.tr(),
                     style: context.textTheme.headline4
                         ?.copyWith(color: Colors.white),
                     textAlign: TextAlign.center),

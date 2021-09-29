@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:mvvm_app/view/_product/_model/query/restaurant_query.dart';
-import 'package:mvvm_app/view/home/restaurants/model/restaurant_model.dart';
 import 'package:vexana/vexana.dart';
+
+import '../../../_product/_model/query/restaurant_query.dart';
+import '../model/restaurant_model.dart';
 
 abstract class IRestaurantsService {
   final INetworkManager manager;

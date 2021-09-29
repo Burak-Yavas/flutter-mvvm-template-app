@@ -1,13 +1,13 @@
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:mobx/mobx.dart';
-import 'package:mvvm_app/core/constants/enums/locale_keys_enum.dart';
-import 'package:mvvm_app/core/constants/navigation/navigation_constants.dart';
-import 'package:mvvm_app/core/init/lang/locale_keys.g.dart';
-import 'package:mvvm_app/view/_product/_constants/image_path_svg.dart';
 
 import '../../../../core/base/model/base_view_model.dart';
+import '../../../../core/constants/enums/locale_keys_enum.dart';
+import '../../../../core/constants/navigation/navigation_constants.dart';
 import '../../../../core/extension/string_extension.dart';
+import '../../../../core/init/lang/locale_keys.g.dart';
+import '../../../_product/_constants/image_path_svg.dart';
 import '../model/on_board_model.dart';
 
 part 'on_board_view_model.g.dart';

@@ -1,11 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:mobx/mobx.dart';
-import 'package:mvvm_app/core/base/model/base_view_model.dart';
-import 'package:mvvm_app/view/_product/_model/query/restaurant_query.dart';
-import 'package:mvvm_app/view/_product/_utility/throttle_helper.dart';
-import 'package:mvvm_app/view/home/restaurants/model/restaurant_model.dart';
-import 'package:mvvm_app/view/home/restaurants/service/IRestaurantsService.dart';
-import 'package:mvvm_app/view/home/restaurants/service/restaurants_service.dart';
+
+import '../../../../core/base/model/base_view_model.dart';
+import '../../../_product/_model/query/restaurant_query.dart';
+import '../../../_product/_utility/throttle_helper.dart';
+import '../model/restaurant_model.dart';
+import '../service/IRestaurantsService.dart';
+
 part 'restaurant_view_model.g.dart';
 
 class RestaurantViewModel = _RestaurantViewModelBase with _$RestaurantViewModel;

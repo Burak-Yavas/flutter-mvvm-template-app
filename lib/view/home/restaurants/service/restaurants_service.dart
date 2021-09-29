@@ -1,11 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:mvvm_app/view/_product/_model/query/restaurant_query.dart';
-import 'package:mvvm_app/view/_product/_model/query/restaurant_query_enum.dart';
-import 'package:mvvm_app/view/_product/_utility/serivce_helper.dart';
-import 'package:mvvm_app/view/_product/enum/network_route_enum.dart';
-import 'package:mvvm_app/view/home/restaurants/model/restaurant_model.dart';
-import 'package:mvvm_app/view/home/restaurants/service/IRestaurantsService.dart';
 import 'package:vexana/vexana.dart';
+
+import '../../../_product/_model/query/restaurant_query.dart';
+import '../../../_product/_model/query/restaurant_query_enum.dart';
+import '../../../_product/_utility/serivce_helper.dart';
+import '../../../_product/enum/network_route_enum.dart';
+import '../model/restaurant_model.dart';
+import 'IRestaurantsService.dart';
 
 class RestaurantsService extends IRestaurantsService with ServiceHelper {
   RestaurantsService(

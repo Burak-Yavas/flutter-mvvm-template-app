@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:mvvm_app/core/extension/context_extension.dart';
-import 'package:mvvm_app/core/init/network/vexana_manager.dart';
-import 'package:mvvm_app/view/home/restaurants/model/restaurant_model.dart';
-import 'package:mvvm_app/view/home/restaurants/service/IRestaurantsService.dart';
-import 'package:mvvm_app/view/home/restaurants/service/restaurants_service.dart';
 import 'package:vexana/vexana.dart';
+
+import '../../../../core/init/network/vexana_manager.dart';
+import '../model/restaurant_model.dart';
+import '../service/IRestaurantsService.dart';
+import '../service/restaurants_service.dart';
 
 class RestaurantDetailView extends StatelessWidget {
   final Restaurant? restaurant;

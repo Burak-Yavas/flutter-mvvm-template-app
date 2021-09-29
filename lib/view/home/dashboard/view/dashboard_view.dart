@@ -3,18 +3,18 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:flutter_mobx/flutter_mobx.dart';
-import 'package:mvvm_app/core/base/view/base_widget.dart';
-import 'package:mvvm_app/core/extension/context_extension.dart';
-import 'package:mvvm_app/core/init/lang/locale_keys.g.dart';
-import 'package:mvvm_app/core/init/network/vexana_manager.dart';
-import 'package:mvvm_app/product/widget/card/restaurant_card.dart';
-import 'package:mvvm_app/product/widget/grid/dashboard_grid_view.dart';
-import 'package:mvvm_app/product/widget/pageview/dashboard_slider.dart';
-import 'package:mvvm_app/view/home/dashboard/model/dashboard_model.dart';
-import 'package:mvvm_app/view/home/dashboard/model/dashboard_view_state.dart';
-import 'package:mvvm_app/view/home/dashboard/model/slider_model.dart';
-import 'package:mvvm_app/view/home/dashboard/service/dashboard_service.dart';
-import 'package:mvvm_app/view/home/dashboard/viewmodel/dashboard_view_model.dart';
+
+import '../../../../core/base/view/base_widget.dart';
+import '../../../../core/extension/context_extension.dart';
+import '../../../../core/init/lang/locale_keys.g.dart';
+import '../../../../core/init/network/vexana_manager.dart';
+import '../../../../product/widget/grid/dashboard_grid_view.dart';
+import '../../../../product/widget/pageview/dashboard_slider.dart';
+import '../model/dashboard_model.dart';
+import '../model/dashboard_view_state.dart';
+import '../model/slider_model.dart';
+import '../service/dashboard_service.dart';
+import '../viewmodel/dashboard_view_model.dart';
 
 class DashBoardView extends StatelessWidget {
   final GlobalKey<ScaffoldState> _scaffoldyKey = GlobalKey();

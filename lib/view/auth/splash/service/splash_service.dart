@@ -1,9 +1,10 @@
-import 'package:mvvm_app/view/_product/_model/query/splash_query_enum.dart';
-import 'package:mvvm_app/view/_product/enum/network_route_enum.dart';
-import 'package:mvvm_app/view/auth/splash/model/splash_force_update_model.dart';
-import 'package:mvvm_app/view/auth/splash/service/ISplashService.dart';
 import 'package:vexana/src/interface/INetworkService.dart';
 import 'package:vexana/vexana.dart';
+
+import '../../../_product/_model/query/splash_query_enum.dart';
+import '../../../_product/enum/network_route_enum.dart';
+import '../model/splash_force_update_model.dart';
+import 'ISplashService.dart';
 
 class SplashService extends ISplashService {
   SplashService(INetworkManager networkManager) : super(networkManager);

@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_mobx/flutter_mobx.dart';
-import 'package:mvvm_app/core/base/view/base_widget.dart';
-import 'package:mvvm_app/core/constants/image/image_constatns.dart';
-import 'package:mvvm_app/core/extension/context_extension.dart';
-import 'package:mvvm_app/core/extension/string_extension.dart';
-import 'package:mvvm_app/view/auth/login/viewmodel/login_view_model.dart';
+
+import '../../../../core/base/view/base_widget.dart';
+import '../../../../core/constants/image/image_constatns.dart';
+import '../../../../core/extension/context_extension.dart';
+import '../viewmodel/login_view_model.dart';
 
 class LoginView extends StatelessWidget {
   const LoginView({Key? key}) : super(key: key);

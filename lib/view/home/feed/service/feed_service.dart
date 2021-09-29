@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:mvvm_app/view/_product/_utility/serivce_helper.dart';
-import 'package:mvvm_app/view/_product/enum/network_route_enum.dart';
-import 'package:mvvm_app/view/home/feed/model/feed_model.dart';
 import 'package:vexana/vexana.dart';
+
+import '../../../_product/_utility/serivce_helper.dart';
+import '../../../_product/enum/network_route_enum.dart';
+import '../model/feed_model.dart';
 import 'IFeedService.dart';
 
 class FeedService extends IFeedService with ServiceHelper {

@@ -1,12 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:mvvm_app/view/_product/_utility/serivce_helper.dart';
-import 'package:mvvm_app/view/_product/enum/network_route_enum.dart';
-import 'package:mvvm_app/view/home/dashboard/model/slider_model.dart';
-import 'package:mvvm_app/view/home/dashboard/model/dashboard_model.dart';
-import 'package:mvvm_app/view/home/dashboard/model/dashboard_enums.dart';
-
 import 'package:vexana/vexana.dart';
 
+import '../../../_product/_utility/serivce_helper.dart';
+import '../../../_product/enum/network_route_enum.dart';
+import '../model/dashboard_enums.dart';
+import '../model/dashboard_model.dart';
+import '../model/slider_model.dart';
 import 'IDashBoardService.dart';
 
 class DashBoardService extends IDashBoardService with ServiceHelper {

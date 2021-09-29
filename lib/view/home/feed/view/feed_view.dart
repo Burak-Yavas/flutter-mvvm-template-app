@@ -1,12 +1,13 @@
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_mobx/flutter_mobx.dart';
-import 'package:mvvm_app/core/base/view/base_widget.dart';
-import 'package:mvvm_app/core/components/decoration/circle_decoration.dart';
-import 'package:mvvm_app/core/extension/context_extension.dart';
-import 'package:mvvm_app/core/init/lang/locale_keys.g.dart';
-import 'package:mvvm_app/view/home/feed/model/feed_model.dart';
-import 'package:mvvm_app/view/home/feed/viewmodel/feed_view_model.dart';
+
+import '../../../../core/base/view/base_widget.dart';
+import '../../../../core/components/decoration/circle_decoration.dart';
+import '../../../../core/extension/context_extension.dart';
+import '../../../../core/init/lang/locale_keys.g.dart';
+import '../model/feed_model.dart';
+import '../viewmodel/feed_view_model.dart';
 
 class FeedView extends StatelessWidget {
   const FeedView({Key? key}) : super(key: key);
@@ -30,7 +31,7 @@ class FeedView extends StatelessWidget {
             return viewModel.isLoading
                 ? buildCenter()
                 : viewModel.feedModels == null || viewModel.feedModels!.isEmpty
-                    ? Center(child: Text("Not Found!"))
+                    ? Center(child: Text(LocaleKeys.home_feed_notFound))
                     : buildListViewRecomm(context, viewModel);
           }),
         ),
@@ -172,7 +173,6 @@ class FeedView extends StatelessWidget {
           leading: CircleAvatar(),
           title: Text(house.user!.name!),
           subtitle: Text(house.user!.date!),
-          trailing: Text("RATE"),
         ),
         Text(house.title!,
             style: context.textTheme.headline6!

@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:mvvm_app/core/constants/app/app_constants.dart';
 import 'package:webview_flutter/webview_flutter.dart';
-import 'package:mvvm_app/view/settings/model/settings_dynamic_model.dart';
+
+import '../../../../core/constants/app/app_constants.dart';
+import '../../model/settings_dynamic_model.dart';
 
 class SettingsDynamicView extends StatelessWidget {
   final SettingsDynamicModel model;

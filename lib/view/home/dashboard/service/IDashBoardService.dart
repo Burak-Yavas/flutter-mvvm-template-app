@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:mvvm_app/view/home/dashboard/model/dashboard_enums.dart';
-import 'package:mvvm_app/view/home/dashboard/model/dashboard_model.dart';
-import 'package:mvvm_app/view/home/dashboard/model/slider_model.dart';
 import 'package:vexana/vexana.dart';
+
+import '../model/dashboard_enums.dart';
+import '../model/dashboard_model.dart';
+import '../model/slider_model.dart';
 
 abstract class IDashBoardService {
   final INetworkManager manager;

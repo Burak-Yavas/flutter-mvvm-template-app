@@ -1,10 +1,10 @@
-import 'package:flutter/material.dart';
-import 'package:mvvm_app/view/_product/_utility/detail_utility_enums.dart';
-import 'package:mvvm_app/view/_product/_utility/serivce_helper.dart';
-import 'package:mvvm_app/view/_product/enum/network_route_enum.dart';
-import 'package:mvvm_app/view/home/detail/model/detail_model.dart';
-import 'package:mvvm_app/view/home/detail/service/IDetailService.dart';
 import 'package:vexana/vexana.dart';
+
+import '../../../_product/_utility/detail_utility_enums.dart';
+import '../../../_product/_utility/serivce_helper.dart';
+import '../../../_product/enum/network_route_enum.dart';
+import '../model/detail_model.dart';
+import 'IDetailService.dart';
 
 class DetailService extends IDetailService with ServiceHelper {
   DetailService(INetworkManager manager) : super(manager);

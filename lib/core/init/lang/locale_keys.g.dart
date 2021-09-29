@@ -27,6 +27,7 @@ abstract class  LocaleKeys {
   static const home_feed_tabBar = 'home.feed.tabBar';
   static const home_feed_subtitle_recommended = 'home.feed.subtitle.recommended';
   static const home_feed_subtitle = 'home.feed.subtitle';
+  static const home_feed_notFound = 'home.feed.notFound';
   static const home_feed = 'home.feed';
   static const home_restaurants_cancel = 'home.restaurants.cancel';
   static const home_restaurants_next = 'home.restaurants.next';
@@ -38,9 +39,23 @@ abstract class  LocaleKeys {
   static const home_dashboard_allRestaurants = 'home.dashboard.allRestaurants';
   static const home_dashboard_search = 'home.dashboard.search';
   static const home_dashboard = 'home.dashboard';
+  static const home_detail_title = 'home.detail.title';
+  static const home_detail_title2 = 'home.detail.title2';
+  static const home_detail_filter = 'home.detail.filter';
+  static const home_detail = 'home.detail';
   static const home = 'home';
   static const settings_settings_title = 'settings.settings.title';
+  static const settings_settings_contrubitors = 'settings.settings.contrubitors';
+  static const settings_settings_home = 'settings.settings.home';
+  static const settings_settings_aboutUs = 'settings.settings.aboutUs';
+  static const settings_settings_theme = 'settings.settings.theme';
+  static const settings_settings_themeSub = 'settings.settings.themeSub';
+  static const settings_settings_langSettings = 'settings.settings.langSettings';
+  static const settings_settings_app = 'settings.settings.app';
   static const settings_settings = 'settings.settings';
   static const settings = 'settings';
+  static const splash_splash_title = 'splash.splash.title';
+  static const splash_splash = 'splash.splash';
+  static const splash = 'splash';
 
 }

@@ -1,17 +1,14 @@
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
-import 'package:mvvm_app/core/init/cache/locale_manager.dart';
-import 'package:mvvm_app/view/auth/splash/view/splash_view.dart';
-import 'package:mvvm_app/view/home/detail/view/detail_view.dart';
 import 'package:provider/provider.dart';
 
 import 'core/constants/app/app_constants.dart';
+import 'core/init/cache/locale_manager.dart';
 import 'core/init/lang/language_manager.dart';
 import 'core/init/navigation/navigation_route.dart';
 import 'core/init/navigation/navigation_service.dart';
 import 'core/init/notifier/provider_list.dart';
 import 'core/init/notifier/theme_notifer.dart';
-import 'view/settings/view/settings_view.dart';
 
 Future<void> main() async {
   await _init();

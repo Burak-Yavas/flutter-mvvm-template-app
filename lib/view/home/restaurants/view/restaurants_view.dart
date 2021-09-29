@@ -1,14 +1,15 @@
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_mobx/flutter_mobx.dart';
-import 'package:mvvm_app/core/base/view/base_widget.dart';
-import 'package:mvvm_app/core/extension/context_extension.dart';
-import 'package:mvvm_app/core/init/lang/locale_keys.g.dart';
-import 'package:mvvm_app/core/init/network/vexana_manager.dart';
-import 'package:mvvm_app/view/_product/_widgets/animations/restaurant_card_animation.dart';
-import 'package:mvvm_app/view/_product/_widgets/listtile/restaurant_card.dart';
-import 'package:mvvm_app/view/home/restaurants/service/restaurants_service.dart';
-import 'package:mvvm_app/view/home/restaurants/viewmodel/restaurant_view_model.dart';
+
+import '../../../../core/base/view/base_widget.dart';
+import '../../../../core/extension/context_extension.dart';
+import '../../../../core/init/lang/locale_keys.g.dart';
+import '../../../../core/init/network/vexana_manager.dart';
+import '../../../_product/_widgets/animations/restaurant_card_animation.dart';
+import '../../../_product/_widgets/listtile/restaurant_card.dart';
+import '../service/restaurants_service.dart';
+import '../viewmodel/restaurant_view_model.dart';
 
 class RestaurantsView extends StatelessWidget {
   final GlobalKey<ScaffoldState> scaffoldKey = GlobalKey();

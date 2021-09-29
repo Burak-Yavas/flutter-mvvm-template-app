@@ -1,5 +1,6 @@
 import 'package:json_annotation/json_annotation.dart';
 import 'package:vexana/vexana.dart';
+
 part 'feed_model.g.dart';
 
 @JsonSerializable()

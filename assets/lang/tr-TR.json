@@ -1,56 +1,74 @@
 {
-    "welcome": "Welcome To My App",
+    "welcome": "Uygulamama Hoş Geldiniz",
     "onBoard": {
         "page1": {
-            "title": "Any Meal You Want",
-            "desc": "More than 10 cuisine available"
+            "title": "İstediğin Herhangi Bir Yemek",
+            "desc": "10'dan Fazla Mutfak Çeşidi İle"
         },
         "page2": {
-            "title": "Need A Break?",
-            "desc": "Order any drink you want"
+            "title": "Molaya İhityacın Olduğu An",
+            "desc": "İstediğin Kahveyi İste"
         },
         "page3": {
-            "title": "Just A Few Steps",
-            "desc": "And your order on your way"
+            "title": "Sadece Birkaç Adımda",
+            "desc": "Siparişin Yolda"
         }
     },
     "login": {
-        "tab1": "Login",
-        "tab2": "SignUp",
+        "tab1": "Giriş Yap",
+        "tab2": "Kayıt Ol",
         "email": "Email",
-        "password": "Password",
-        "forgotText": "Forgot Password",
-        "login": "Login",
-        "dontAccount": "Dont have account"
+        "password": "Şifte",
+        "forgotText": "Şifremi Unuttum",
+        "login": "Giriş",
+        "dontAccount": "Hesabım Yok"
     },
     "home": {
         "feed": {
             "tabBar": {
-                "tab1": "Latest",
-                "tab2": "Decorative",
-                "tab3": "Music",
-                "tab4": "Style"
+                "tab1": "En Son",
+                "tab2": "Dekoratif",
+                "tab3": "Müzik",
+                "tab4": "Stil"
             },
             "subtitle": {
-                "recommended": "Recommended"
-            }
+                "recommended": "Tavsiye Edilen"
+            },
+            "notFound": "Bulunamadı!"
         },
         "restaurants": {
-            "cancel": "Cancel",
-            "next": "Next",
-            "search": "Search",
-            "findRestautants": "Find Restaurants"
+            "cancel": "Geri",
+            "next": "İleri",
+            "search": "Ara",
+            "findRestautants": "Restoran Ara"
         },
         "dashboard": {
             "title": "Delivery App",
-            "recommendedRestaurants": "Recommended Restaurants",
-            "allRestaurants": "All Restaurants",
-            "search": "Search Restaurant"
+            "recommendedRestaurants": "Tavsiye Edilenler",
+            "allRestaurants": "Tüm Restoranlar",
+            "search": "Restoran Ara"
+        },
+        "detail": {
+            "title": "En Çok Satanlar",
+            "title2": "Menüler",
+            "filter": "Filtre"
         }
     },
     "settings": {
         "settings": {
-            "title": "Ayarlar"
+            "title": "Ayarlar",
+            "contrubitors": "Katkıda Bulunanlar",
+            "home": "Ana Sayfa",
+            "aboutUs": "Hakkımızda",
+            "theme": "Tema Ayarları",
+            "themeSub": "Uygulama temasını değiştirebilirsin.",
+            "langSettings": "Dil Ayarları",
+            "app": "Uygulama Ayarları"
+        }
+    },
+    "splash": {
+        "splash": {
+            "title": "WELCOME TO MEAL DELIVERY APP"
         }
     }
 }

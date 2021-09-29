@@ -33,7 +33,8 @@
             },
             "subtitle": {
                 "recommended": "Recommended"
-            }
+            },
+            "notFound": "Not Found!"
         },
         "restaurants": {
             "cancel": "Cancel",
@@ -46,11 +47,28 @@
             "recommendedRestaurants": "Recommended Restaurants",
             "allRestaurants": "All Restaurants",
             "search": "Search Restaurant"
+        },
+        "detail": {
+            "title": "Best Sellers",
+            "title2": "Menus",
+            "filter": "Filter"
         }
     },
     "settings": {
         "settings": {
-            "title": "Settings"
+            "title": "Settings",
+            "contrubitors": "Project Contrubitors",
+            "home": "Home Page",
+            "aboutUs": "About Us",
+            "theme": "Theme Settings",
+            "themeSub": "You can change the application theme.",
+            "langSettings": "Language Settings",
+            "app": "App Settings"
+        }
+    },
+    "splash": {
+        "splash": {
+            "title": "WELCOME TO MEAL DELIVERY APP"
         }
     }
 }

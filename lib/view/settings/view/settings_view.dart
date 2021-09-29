@@ -1,17 +1,16 @@
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_mobx/flutter_mobx.dart';
-import 'package:mobx/mobx.dart';
-import 'package:mvvm_app/core/base/view/base_widget.dart';
-import 'package:mvvm_app/core/constants/enums/app_theme_enum.dart';
-import 'package:mvvm_app/core/extension/context_extension.dart';
-import 'package:mvvm_app/core/extension/widget_extension.dart';
-import 'package:mvvm_app/core/init/cache/locale_manager.dart';
-import 'package:mvvm_app/core/init/lang/language_manager.dart';
-import 'package:mvvm_app/core/init/lang/locale_keys.g.dart';
-import 'package:mvvm_app/core/init/notifier/theme_notifer.dart';
-import 'package:mvvm_app/view/settings/viewmodel/settings_view_model.dart';
 import 'package:provider/provider.dart';
+
+import '../../../core/base/view/base_widget.dart';
+import '../../../core/constants/enums/app_theme_enum.dart';
+import '../../../core/extension/context_extension.dart';
+import '../../../core/extension/widget_extension.dart';
+import '../../../core/init/lang/language_manager.dart';
+import '../../../core/init/lang/locale_keys.g.dart';
+import '../../../core/init/notifier/theme_notifer.dart';
+import '../viewmodel/settings_view_model.dart';
 
 class SettingsView extends StatelessWidget {
   const SettingsView({Key? key}) : super(key: key);
@@ -68,20 +67,20 @@ class SettingsView extends StatelessWidget {
                   ListTile(
                     onTap: viewModel.navigateToContribution,
                     leading: Icon(Icons.favorite),
-                    title: Text("Project Contrubitors"),
+                    title: Text(LocaleKeys.settings_settings_contrubitors.tr()),
                     trailing: Icon(Icons.keyboard_arrow_right_rounded),
                   ),
                   ListTile(
                     onTap: viewModel.navigateToFakeContribution,
                     leading: Icon(Icons.home),
-                    title: Text("Home Page"),
+                    title: Text(LocaleKeys.settings_settings_home.tr()),
                     trailing: Icon(Icons.keyboard_arrow_right_rounded),
                   )
                 ],
               ),
               color: context.colors.primaryVariant)
         ],
-        title: "About Us");
+        title: LocaleKeys.settings_settings_aboutUs.tr());
   }
 
   Widget buildCardCore(BuildContext context, SettingsViewModel viewModel) {
@@ -94,8 +93,8 @@ class SettingsView extends StatelessWidget {
                 ListTile(
                   onTap: viewModel.navigateToContribution,
                   leading: Icon(Icons.invert_colors),
-                  title: Text("Theme Settings"),
-                  subtitle: Text("You can change the application theme."),
+                  title: Text(LocaleKeys.settings_settings_theme.tr()),
+                  subtitle: Text(LocaleKeys.settings_settings_themeSub.tr()),
                   trailing: IconButton(
                       onPressed: viewModel.changeAppTheme,
                       icon: context.watch<ThemeNotifier>().currenThemeEnum ==
@@ -106,7 +105,7 @@ class SettingsView extends StatelessWidget {
                 ListTile(
                   onTap: () {},
                   leading: Icon(Icons.language_sharp),
-                  title: Text("Language Settings"),
+                  title: Text(LocaleKeys.settings_settings_langSettings.tr()),
                   trailing: Observer(builder: (_) {
                     return DropdownButton<Locale>(
                         items: [
@@ -132,7 +131,7 @@ class SettingsView extends StatelessWidget {
             color: context.colors.primaryVariant,
           )
         ],
-        title: "App Settings");
+        title: LocaleKeys.settings_settings_app.tr());
   }
 
   Card buildUserCard(BuildContext context, SettingsViewModel viewModel) {
