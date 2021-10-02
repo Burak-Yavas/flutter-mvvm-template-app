@@ -17,9 +17,7 @@ class RestaurantCard extends StatelessWidget {
       title: Text(restaurant!.name!),
       subtitle: Text(restaurant!.company!),
       trailing: ElevatedButton(
-        onPressed: () {},
-        child: Text("Rate"),
-      ),
+          onPressed: () {}, child: Icon(Icons.navigate_next_rounded)),
     );
   }
 }

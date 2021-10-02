@@ -43,6 +43,9 @@ abstract class  LocaleKeys {
   static const home_detail_title2 = 'home.detail.title2';
   static const home_detail_filter = 'home.detail.filter';
   static const home_detail = 'home.detail';
+  static const home_appMenu_tab1 = 'home.appMenu.tab1';
+  static const home_appMenu_tab2 = 'home.appMenu.tab2';
+  static const home_appMenu = 'home.appMenu';
   static const home = 'home';
   static const settings_settings_title = 'settings.settings.title';
   static const settings_settings_contrubitors = 'settings.settings.contrubitors';

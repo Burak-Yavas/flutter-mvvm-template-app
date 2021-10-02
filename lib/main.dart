@@ -37,7 +37,6 @@ class MyApp extends StatelessWidget {
       theme: context.watch<ThemeNotifier>().currentTheme,
       localizationsDelegates: context.localizationDelegates,
       supportedLocales: context.supportedLocales,
-      // home: SplashView(),
       locale: context.locale,
       onGenerateRoute: NavigationRoute.instance.generateRoute,
       navigatorKey: NavigationService.instance.navigatorKey,

@@ -24,49 +24,49 @@ mixin _$LoginViewModel on _LoginViewModelBase, Store {
     });
   }
 
-  final _$isVisibleOpenAtom = Atom(name: '_LoginViewModelBase.isVisibleOpen');
+  final _$isLockOpenAtom = Atom(name: '_LoginViewModelBase.isLockOpen');
 
   @override
-  bool get isVisibleOpen {
-    _$isVisibleOpenAtom.reportRead();
-    return super.isVisibleOpen;
+  bool get isLockOpen {
+    _$isLockOpenAtom.reportRead();
+    return super.isLockOpen;
   }
 
   @override
-  set isVisibleOpen(bool value) {
-    _$isVisibleOpenAtom.reportWrite(value, super.isVisibleOpen, () {
-      super.isVisibleOpen = value;
+  set isLockOpen(bool value) {
+    _$isLockOpenAtom.reportWrite(value, super.isLockOpen, () {
+      super.isLockOpen = value;
     });
   }
 
-  final _$fetchLoginServiceAsyncAction =
-      AsyncAction('_LoginViewModelBase.fetchLoginService');
+  final _$fetchLoginSeviceAsyncAction =
+      AsyncAction('_LoginViewModelBase.fetchLoginSevice');
 
   @override
-  Future<void> fetchLoginService() {
-    return _$fetchLoginServiceAsyncAction.run(() => super.fetchLoginService());
+  Future<void> fetchLoginSevice() {
+    return _$fetchLoginSeviceAsyncAction.run(() => super.fetchLoginSevice());
   }
 
   final _$_LoginViewModelBaseActionController =
       ActionController(name: '_LoginViewModelBase');
 
   @override
-  dynamic isLoadingChanged() {
+  void isLoadingChange() {
     final _$actionInfo = _$_LoginViewModelBaseActionController.startAction(
-        name: '_LoginViewModelBase.isLoadingChanged');
+        name: '_LoginViewModelBase.isLoadingChange');
     try {
-      return super.isLoadingChanged();
+      return super.isLoadingChange();
     } finally {
       _$_LoginViewModelBaseActionController.endAction(_$actionInfo);
     }
   }
 
   @override
-  void isVisibleStateChanged() {
+  void isLockStateChange() {
     final _$actionInfo = _$_LoginViewModelBaseActionController.startAction(
-        name: '_LoginViewModelBase.isVisibleStateChanged');
+        name: '_LoginViewModelBase.isLockStateChange');
     try {
-      return super.isVisibleStateChanged();
+      return super.isLockStateChange();
     } finally {
       _$_LoginViewModelBaseActionController.endAction(_$actionInfo);
     }
@@ -76,7 +76,7 @@ mixin _$LoginViewModel on _LoginViewModelBase, Store {
   String toString() {
     return '''
 isLoading: ${isLoading},
-isVisibleOpen: ${isVisibleOpen}
+isLockOpen: ${isLockOpen}
     ''';
   }
 }

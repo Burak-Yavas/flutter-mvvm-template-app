@@ -21,7 +21,7 @@
         "password": "Password",
         "forgotText": "Forgot Password",
         "login": "Login",
-        "dontAccount": "Dont have account"
+        "dontAccount": "Dont have account? SignUp"
     },
     "home": {
         "feed": {
@@ -52,6 +52,10 @@
             "title": "Best Sellers",
             "title2": "Menus",
             "filter": "Filter"
+        },
+        "appMenu": {
+            "tab1": "Social",
+            "tab2": "Explore"
         }
     },
     "settings": {
