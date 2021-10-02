@@ -1,16 +1,17 @@
 # mvvm_app
 
-A new Flutter project.
+This project was builded to understand how mvvm and feature based development works.
 
-## Getting Started
+This project was developed on page specific, so there is no data flow between pages.
 
-This project is a starting point for a Flutter application.
 
-A few resources to get you started if this is your first Flutter project:
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+https://user-images.githubusercontent.com/76699815/135730617-3d88579c-733f-4465-b194-9f8d7c7c4d31.mp4
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+
+
+
+
+
+
+for original source: https://github.com/VB10/flutter-architecture-template
