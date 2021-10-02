@@ -3,14 +3,13 @@ import 'package:flutter/material.dart';
 import 'package:flutter_mobx/flutter_mobx.dart';
 
 import '../../../../core/base/view/base_widget.dart';
-import '../../../../core/components/decoration/circle_decoration.dart';
 import '../../../../core/extension/context_extension.dart';
 import '../../../../core/init/lang/locale_keys.g.dart';
 import '../model/feed_model.dart';
 import '../viewmodel/feed_view_model.dart';
 
-class FeedView extends StatelessWidget {
-  const FeedView({Key? key}) : super(key: key);
+class FeedMenuView extends StatelessWidget {
+  const FeedMenuView({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -24,17 +23,13 @@ class FeedView extends StatelessWidget {
       onPageBuilder: (BuildContext context, FeedViewModel viewModel) =>
           Scaffold(
         key: viewModel.scaffoldKey,
-        appBar: buildAppBar(),
-        body: DefaultTabController(
-          length: 4,
-          child: Observer(builder: (_) {
-            return viewModel.isLoading
-                ? buildCenter()
-                : viewModel.feedModels == null || viewModel.feedModels!.isEmpty
-                    ? Center(child: Text(LocaleKeys.home_feed_notFound))
-                    : buildListViewRecomm(context, viewModel);
-          }),
-        ),
+        body: Observer(builder: (_) {
+          return viewModel.isLoading
+              ? buildCenter()
+              : viewModel.feedModels == null || viewModel.feedModels!.isEmpty
+                  ? Center(child: Text(LocaleKeys.home_feed_notFound))
+                  : buildListViewRecomm(context, viewModel);
+        }),
       ),
     );
   }
@@ -43,7 +38,6 @@ class FeedView extends StatelessWidget {
     return ListView(
       padding: context.paddingLow,
       children: [
-        buildTabBar(context),
         buildOnTopRecommsPageView(viewModel),
         Padding(
           padding: context.paddingLow,
@@ -95,46 +89,9 @@ class FeedView extends StatelessWidget {
     );
   }
 
-  TabBar buildTabBar(BuildContext context) {
-    return TabBar(
-        indicator:
-            CircleDecoration(color: context.colors.onSecondary, radius: 2),
-        tabs: [
-          Tab(
-            text: LocaleKeys.home_feed_tabBar_tab1.tr(),
-          ),
-          Tab(
-            text: LocaleKeys.home_feed_tabBar_tab2.tr(),
-          ),
-          Tab(
-            text: LocaleKeys.home_feed_tabBar_tab3.tr(),
-          ),
-          Tab(
-            text: LocaleKeys.home_feed_tabBar_tab4.tr(),
-          )
-        ]);
-  }
-
   Center buildCenter() {
     return Center(
       child: CircularProgressIndicator(),
-    );
-  }
-
-  AppBar buildAppBar() {
-    return AppBar(
-      backgroundColor: Colors.transparent,
-      elevation: 0,
-      leading: IconButton(
-        icon: Icon(Icons.menu),
-        onPressed: () {},
-      ),
-      actions: [
-        IconButton(
-          icon: Icon(Icons.search),
-          onPressed: () {},
-        )
-      ],
     );
   }
 

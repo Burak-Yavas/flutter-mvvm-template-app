@@ -52,6 +52,10 @@
             "title": "En Çok Satanlar",
             "title2": "Menüler",
             "filter": "Filtre"
+        },
+        "appMenu": {
+            "tab1": "Sosyal",
+            "tab2": "Keşfet"
         }
     },
     "settings": {

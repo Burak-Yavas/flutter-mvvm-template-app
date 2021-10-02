@@ -40,7 +40,6 @@ class RestaurantsService extends IRestaurantsService with ServiceHelper {
 
   @override
   Future<List<Restaurant>> fetcRestaurantNameQuery(String text) {
-    // TODO: implement fetchUserNameQuery
     throw UnimplementedError();
   }
 }

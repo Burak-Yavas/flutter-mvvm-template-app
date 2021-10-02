@@ -25,7 +25,7 @@ class RestaurantsView extends StatelessWidget {
       },
       onPageBuilder: (BuildContext context, RestaurantViewModel viewModel) =>
           Container(
-        color: Colors.white,
+        color: context.colors.primaryVariant,
         padding: context.paddingLow,
         child: Scaffold(
           appBar: buildAppBar(context),
@@ -39,7 +39,8 @@ class RestaurantsView extends StatelessWidget {
                   viewModel.fetchAllSearchQuery(value);
                 },
                 decoration: InputDecoration(
-                    prefixIcon: Icon(Icons.search, color: Colors.yellow)),
+                    prefixIcon: Icon(Icons.search,
+                        color: context.colors.secondaryVariant)),
               ),
               Spacer(flex: 2),
               Expanded(
@@ -57,23 +58,6 @@ class RestaurantsView extends StatelessWidget {
     return AppBar(
       backgroundColor: Colors.transparent,
       elevation: 0,
-      // ignore: deprecated_member_use
-      leading: FlatButton(
-          onPressed: () {},
-          padding: EdgeInsets.zero,
-          child: Text(LocaleKeys.home_restaurants_cancel).tr()),
-      actions: [
-        // ignore: deprecated_member_use
-        FlatButton(
-            onPressed: () {},
-            child: Text(
-              LocaleKeys.home_restaurants_next,
-              style: context.textTheme.subtitle1!.copyWith(
-                fontWeight: FontWeight.w600,
-                color: Colors.blue,
-              ),
-            ).tr())
-      ],
     );
   }
 
@@ -81,7 +65,7 @@ class RestaurantsView extends StatelessWidget {
     return Text(
       LocaleKeys.home_restaurants_search,
       style: context.textTheme.headline4!
-          .copyWith(fontWeight: FontWeight.bold, color: Colors.red),
+          .copyWith(fontWeight: FontWeight.bold, color: context.colors.onError),
     );
   }
 

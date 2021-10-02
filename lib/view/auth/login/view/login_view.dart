@@ -1,5 +1,7 @@
+import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_mobx/flutter_mobx.dart';
+import 'package:mvvm_app/core/init/lang/locale_keys.g.dart';
 
 import '../../../../core/base/view/base_widget.dart';
 import '../../../../core/constants/image/image_constatns.dart';
@@ -55,12 +57,12 @@ class LoginView extends StatelessWidget {
   TabBar buildTabBar(BuildContext context) {
     return TabBar(
       tabs: [
-        Text("Login",
+        Text(LocaleKeys.login_tab1.tr(),
             style: Theme.of(context)
                 .textTheme
                 .subtitle1!
                 .copyWith(color: context.colors.secondary)),
-        Text("SignUp",
+        Text(LocaleKeys.login_tab2.tr(),
             style: Theme.of(context)
                 .textTheme
                 .subtitle1!
@@ -99,19 +101,19 @@ class LoginView extends StatelessWidget {
       return TextFormField(
         controller: viewModel.passwordController,
         validator: (value) => value!.isNotEmpty ? null : 'This field required',
-        obscureText: viewModel.isVisibleOpen,
+        obscureText: viewModel.isLockOpen,
         decoration: InputDecoration(
             fillColor: Colors.grey,
-            labelText: " Password ",
+            labelText: " ${LocaleKeys.login_password.tr()} ",
             icon: Icon(Icons.password),
             suffixIcon: IconButton(
               icon: Observer(builder: (_) {
-                return Icon(viewModel.isVisibleOpen
+                return Icon(viewModel.isLockOpen
                     ? Icons.visibility_off
                     : Icons.visibility);
               }),
               onPressed: () {
-                viewModel.isVisibleStateChanged();
+                viewModel.isLockStateChange();
               },
             )),
       );
@@ -124,7 +126,9 @@ class LoginView extends StatelessWidget {
       //validator: (value) => value!.isValidEmails ? null : "Invalid Email",
       cursorColor: Colors.grey,
       decoration: InputDecoration(
-          fillColor: Colors.grey, labelText: "Email", icon: Icon(Icons.email)),
+          fillColor: Colors.grey,
+          labelText: "${LocaleKeys.login_email.tr()}",
+          icon: Icon(Icons.email)),
     );
   }
 
@@ -132,7 +136,7 @@ class LoginView extends StatelessWidget {
     return Observer(builder: (_) {
       return TextButton(
         child: Text(
-          "   Login   ",
+          "   ${LocaleKeys.login_login.tr()}   ",
           style: Theme.of(context)
               .textTheme
               .headline5!
@@ -141,7 +145,7 @@ class LoginView extends StatelessWidget {
         onPressed: viewModel.isLoading
             ? null
             : () {
-                viewModel.fetchLoginService();
+                viewModel.fetchLoginSevice();
               },
         style: TextButton.styleFrom(
             shape: StadiumBorder(), backgroundColor: Colors.black),
@@ -154,7 +158,7 @@ class LoginView extends StatelessWidget {
       alignment: Alignment.centerRight,
       child: TextButton(
         child: Text(
-          "Forgot Password?",
+          LocaleKeys.login_forgotText.tr(),
           style: Theme.of(context)
               .textTheme
               .subtitle1!
@@ -173,7 +177,7 @@ class LoginView extends StatelessWidget {
       alignment: Alignment.centerRight,
       child: TextButton(
         child: Text(
-          "Don't have an account? SignUp",
+          LocaleKeys.login_dontAccount.tr(),
           textAlign: TextAlign.end,
           style: Theme.of(context)
               .textTheme
@@ -194,6 +198,6 @@ AnimatedContainer buildAnimatedContainer(BuildContext context) {
       duration: context.lowDuration,
       height:
           context.mediaQuery.viewInsets.bottom > 0 ? 0 : context.height * 0.3,
-      color: Colors.white,
+      color: context.colors.primaryVariant,
       child: Center(child: Image.asset(ImageConstants.instance.login)));
 }

@@ -6,3 +6,11 @@ enum DashBoardViewItems {
   ALL_RESTAURANTS
 }
 //CAN_ADD_ADMOB
+
+enum DashBoardMenuViewItems {
+  // SEARCH_BAR,
+  // TAB_BAR,
+  SLIDER,
+  RECOMM_RESTAURANTS,
+  ALL_RESTAURANTS
+}

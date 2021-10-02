@@ -49,7 +49,7 @@ class SplashView extends StatelessWidget {
               children: [
                 Text(LocaleKeys.splash_splash_title.tr(),
                     style: context.textTheme.headline4
-                        ?.copyWith(color: Colors.white),
+                        ?.copyWith(color: context.colors.primaryVariant),
                     textAlign: TextAlign.center),
                 CircularProgressIndicator.adaptive()
               ],

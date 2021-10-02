@@ -6,4 +6,6 @@ class NavigationConstants {
   static const LOGIN = '/login';
   static const DASHBOARD = '/dashboard';
   static const RESTAURANT = '/restaurant';
+  static const SETTINGS = '/settings';
+  static const APPMENUVIEW = '/appMenuView';
 }
