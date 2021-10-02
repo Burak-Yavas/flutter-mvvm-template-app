@@ -4,6 +4,7 @@ This project was builded to understand how mvvm and feature based development wo
 
 This project was developed on page specific, so there is no data flow between pages.
 
+service: https://github.com/Burak-Yavas/mvvm-service
 
 
 https://user-images.githubusercontent.com/76699815/135730617-3d88579c-733f-4465-b194-9f8d7c7c4d31.mp4
